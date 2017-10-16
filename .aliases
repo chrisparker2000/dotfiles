@@ -58,7 +58,7 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
+#alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -88,9 +88,9 @@ command -v md5sum > /dev/null || alias md5sum="md5"
 command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
 # JavaScriptCore REPL
-jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc";
-[ -e "${jscbin}" ] && alias jsc="${jscbin}";
-unset jscbin;
+#jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc";
+#[ -e "${jscbin}" ] && alias jsc="${jscbin}";
+#unset jscbin;
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
@@ -139,12 +139,12 @@ alias badge="tput bel"
 alias map="xargs -n1"
 
 # One of @janmoesen’s ProTip™s
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-	alias "$method"="lwp-request -m '$method'"
-done
+#for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+#	alias "$method"="lwp-request -m '$method'"
+#done
 
 # Make Grunt print stack traces by default
-command -v grunt > /dev/null && alias grunt="grunt --stack"
+#command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
