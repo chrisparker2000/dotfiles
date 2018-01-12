@@ -215,7 +215,7 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 #defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Turn off screensaver
-defaults -currentHost write com.apple.screensaver idleTime 0
+defaults write com.apple.screensaver idleTime 0
 
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "${HOME}/Desktop"
