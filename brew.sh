@@ -104,6 +104,7 @@ brew install htop
 brew install the_silver_searcher
 brew install figlet
 brew install pstree
+brew install liquidprompt
 brew cask install visual-studio-code
 
 # Remove outdated versions from the cellar.
