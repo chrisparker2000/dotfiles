@@ -26,10 +26,10 @@ brew tap homebrew/versions
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
-  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/bash;
-fi;
+#if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+#  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+#  chsh -s /usr/local/bin/bash;
+#fi;
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -41,10 +41,10 @@ brew install wget --with-iri
 #brew install narwhal
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+#brew install vim --with-override-system-vi
+#brew install homebrew/dupes/grep
+#brew install homebrew/dupes/openssh
+#brew install homebrew/dupes/screen
 #brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
@@ -81,24 +81,24 @@ brew install homebrew/dupes/screen
 
 # Install other useful binaries.
 brew install ack
-brew install dark-mode
+#brew install dark-mode
 #brew install exiv2
-brew install git
-brew install git-lfs
+#brew install git
+#brew install git-lfs
 #brew install imagemagick --with-webp
 #brew install lua
-brew install lynx
+#brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
 #brew install rhino
-brew install speedtest_cli
+#brew install speedtest_cli
 brew install ssh-copy-id
-brew install testssl
+#brew install testssl
 brew install tree
 brew install vbindiff
-brew install webkit2png
+#brew install webkit2png
 brew install zopfli
 brew install htop
 brew install the_silver_searcher
