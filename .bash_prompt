@@ -5,6 +5,7 @@
 # Heavily inspired by @necolas’s prompt: https://github.com/necolas/dotfiles
 # iTerm → Profiles → Text → use 13pt Monaco with 1.1 vertical spacing.
 
+PROMPT_COMMAND=_bash_history_sync
 if [ -f /usr/local/share/liquidprompt ]; then
   . /usr/local/share/liquidprompt
 else
