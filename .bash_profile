@@ -14,9 +14,9 @@ shopt -s nocaseglob;
 
 # Append to the Bash history file, rather than overwriting it
 #shopt -s histappend;
-HISTSIZE=9000
-FISTFILESIZE=$HISTSIZE
-HISTCONTROL=ignorespace:ignoredups
+export HISTSIZE=9000
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignorespace:ignoredups
 
 _bash_history_sync() {
   builtin history -a         #1
